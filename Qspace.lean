@@ -1,6 +1,7 @@
 -- Root of the Qspace library
 
 import Qspace.Basic
+import Qspace.pdqb.RationalCore
 import Qspace.pdqb.Certification
 import Qspace.pdqb.StructuralLaws
 import Qspace.pdqb.Mutation

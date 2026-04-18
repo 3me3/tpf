@@ -30,6 +30,17 @@ All results are mechanically verified by the Lean 4 kernel:
 - No annihilation
 - Classical projection channels (Pell and Fibonacci sequences as stride choices on the phase ring)
 
+## Foundational Arithmetic
+
+The kernel names, as an explicit theorem, the cancellation law that exact rational arithmetic rests on:
+
+    n * k / n = k        (for n > 0)
+    n * (n+1) / n = n+1  (for n > 0)
+
+This is the operational bedrock of exact partition — multiplication and division by the same positive denominator cancel exactly. Conventional mathematics leaves this identity implicit, absorbed into the continuum. Here it is named, proven, and referenceable, because nothing downstream is exact without it.
+
+Location: `Qspace/pdqb/RationalCore.lean`.
+
 ## What It Does Not Admit
 
 The kernel excludes the following as primitives. None appear anywhere in the formal system:
