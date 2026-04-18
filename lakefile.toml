@@ -1,0 +1,10 @@
+name = "qspace"
+version = "0.1.0"
+defaultTargets = ["qspace"]
+
+[[lean_lib]]
+name = "Qspace"
+
+[[lean_exe]]
+name = "qspace"
+root = "Main"
