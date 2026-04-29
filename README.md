@@ -33,7 +33,7 @@ Each of the following is derived inside the kernel from its own primitives, Lean
 
 **Pell and Fibonacci sequences.** Both sequences appear in the kernel as two stride choices on a single structural object — the eight-state phase ring. Conventional treatment derives each from its own recurrence relation; the kernel derives both from one underlying structure by selecting different traversal strides.
 
-**The cancellation identity, and the absence of negative numbers as primitives.** `n × k / n = k` and `n × (n+1) / n = n+1`, for `n > 0`, named as theorems and proved against the kernel's own arithmetic. The structural significance is sharper than it first appears. Conventional arithmetic introduces negation to close the natural numbers under subtraction, producing the integers, and from there the rationals, the reals, and the complex numbers — each closure carrying the previous one's commitments forward. The kernel does not take the first step. By naming multiplicative cancellation directly as a structural identity, the kernel obtains exact rational arithmetic without needing additive inverse as a primitive operation, and therefore without needing negative numbers as primitive objects. The chirality involution χ produces what observation reads as negation when projected to `{−1, +1}`, but χ is an orientation involution, not arithmetic negation. The kernel's substrate is the demonstration that a formal system capable of producing the structural results above can be built without negation at the foundation. Module: `Qspace/pdqb/RationalCore.lean`.
+**The cancellation identity, and the absence of negative numbers as primitives.** `n × k / n = k` and `n × (n+1) / n = n+1`, for `n > 0`, named as theorems and proved against the kernel's own arithmetic. The structure of the identity is more significant than at first appears. Conventional arithmetic introduces negation to close the natural numbers under subtraction, producing the integers, and from there the rationals, the reals, and the complex numbers — each closure carrying the previous one's commitments forward. The kernel does not take the first step. By naming multiplicative cancellation directly as a structural identity, the kernel obtains exact rational arithmetic without needing additive inverse as a primitive operation, and therefore without needing negative numbers as primitive objects. The chirality involution χ produces what observation reads as negation when projected to `{−1, +1}`, but χ is an orientation involution, not arithmetic negation. The kernel's substrate is the demonstration that a formal system capable of producing the structural results above can be built without negation at the foundation. Module: `Qspace/pdqb/RationalCore.lean`.
 
 **A conserved weighted chiral current.** The current `J = Σ wᵢ · s(φᵢ)`, where `wᵢ` is the integer weight on the `i`-th node and `s` is the chirality sign function (+1 on phases 1–4, −1 on phases 5–8), is proved invariant under composition, collapse, and reversible rollback. The conservation is structural and proved in Lean against the algebra's own definitions, with no continuous symmetry argument required.
 
@@ -41,8 +41,7 @@ Each of the following is derived inside the kernel from its own primitives, Lean
 
 **Reversibility without entropy bookkeeping.** Every operation in the kernel has an explicit inverse, proven to compose to the identity. Deletion of structural elements is reversible by construction. No entropy variable accumulates because the kernel admits no entropy variable. The classical association of irreversible operations with thermodynamic cost does not arise — irreversibility is not present to be costed.
 
-These results are checkable. The kernel compiles. The reader who would dispute any production has to dispute it on the kernel's own terms — which means engaging with the Lean source rather than with the framing.
-
+These results are checkable and the kernel compiles.
 ---
 
 ## The substrate floor
@@ -85,7 +84,7 @@ A classical structure is admissible only as the homomorphic image of a kernel re
 - Projection is structure-preserving.
 - Projection is non-generative — the projection does not define the kernel.
 
-Classical mathematics is recovered. It does not interpret the kernel. The kernel projects into it.
+Classical mathematics is recovered - by projection from the kernel.
 
 ---
 
